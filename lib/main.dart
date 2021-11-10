@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:bot_toast/bot_toast.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_loginpage/LonInControler/logInControler.dart';
 import 'package:flutter_loginpage/Register/Controler/register_controller.dart';
 import 'package:flutter_loginpage/Register/Repository/AppNavigator.dart';
 import './screens/login-page.dart';
@@ -17,7 +18,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
-        Provider<RegisterController>(create: (_) => RegisterController())
+        Provider<RegisterController>(create: (_) => RegisterController()),
+        Provider<LogInControler>(
+          create: (_) => LogInControler(),
+        )
       ],
       child: MaterialApp(
         builder: BotToastInit(),
