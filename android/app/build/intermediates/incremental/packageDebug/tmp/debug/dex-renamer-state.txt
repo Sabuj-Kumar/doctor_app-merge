@@ -1,0 +1,4 @@
+#Wed Nov 10 15:55:37 BDT 2021
+base.0=/home/sabujkumar/NewDhakaChoice/doctor_app-merge (1)/doctor_app-merge/android/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
